@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.mySwiper', {
     // Optional parameters
     
     loop: true,
@@ -21,4 +21,29 @@ const swiper = new Swiper('.swiper', {
       480: {slidesPerView: 1},
     },
   });
+
+  const swiperCat = new Swiper('.slider-cat', {
+    // Optional parameters
+    
+   
+    slidesPerView: 4,
+    spaceBetween: 30,
+    loop: true,
+
   
+    
+  
+    // pagination
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    
+    // And if we need scrollbar
+    breakpints: {
+      992: {slidesPerView: 4},
+      768: {slidesPerView: 2},
+      480: {slidesPerView: 1},
+    },
+  });
+ 
